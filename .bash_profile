@@ -24,3 +24,8 @@ if [ ! -d "$CONFREPO" ]; then
     git init --bare $CONFREPO
     config config status.showUntrackedFiles no
 fi
+
+VIRTUALENVWRAPPER=/usr/local/bin/virtualenvwrapper.sh
+if [ -d "$VIRTUALENVWRAPPER" ]; then
+    source $VIRTUALENVWRAPPER
+fi
